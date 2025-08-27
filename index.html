@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Artista Emergente - Homepage</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jolly Roger Art</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Benvenuti nel mondo di [Nome Artista]</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="blog.html">Blog</a>
-      <a href="contatti.html">Contatti</a>
-    </nav>
-  </header>
+    <header>
+        <h1>Jolly Roger Art</h1>
+        <p>Portfolio artistico</p>
+        <nav>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contatti">Contatti</a>
+        </nav>
+    </header>
 
-  <main>
-    <section>
-      <h2>Chi sono</h2>
-      <p>Sono un artista emergente appassionato di [arte/musica/fotografia]. Qui troverai i miei lavori, i miei pensieri e i miei contatti.</p>
+    <section id="portfolio">
+        <h2>Galleria</h2>
+        <div class="grid-gallery">
+            <img src="images/opera1.jpg" alt="Opera 1">
+            <img src="images/opera2.jpg" alt="Opera 2">
+            <img src="images/opera3.jpg" alt="Opera 3">
+            <img src="images/opera4.jpg" alt="Opera 4">
+            <img src="images/opera5.jpg" alt="Opera 5">
+        </div>
     </section>
 
-    <section>
-      <h2>Seguimi su Instagram</h2>
-      <p><a href="https://instagram.com/nome_artista" target="_blank">@nome_artista</a></p>
+    <section id="contatti">
+        <h2>Contatti</h2>
+        <form action="https://formspree.io/f/mnqlrbkd" method="POST">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Messaggio" required></textarea>
+            <button type="submit">Invia</button>
+        </form>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2025 [Nome Artista] - Tutti i diritti riservati</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 Jolly Roger Art</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
